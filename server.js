@@ -15,7 +15,8 @@ const PORT = process.env.PORT || 5010;
 //Middlewares
 app.use(express.json());
 const corsOptions = {
-  origin: "http://localhost:3000", // Replace with your frontend's URL
+  // origin: "http://localhost:3000", // Replace with your frontend's URL
+  origin: "https://noteappfrontend-gold.vercel.app", // Replace with your frontend's URL
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   credentials: true,
   optionsSuccessStatus: 204,
